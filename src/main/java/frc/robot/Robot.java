@@ -56,3 +56,17 @@ public class Robot extends TimedRobot {
     m_swerve.drive(xSpeed, ySpeed, rot, fieldRelative, getPeriod());
   }
 }
+/*Default disabledPeriodic() method... Override me!
+Default robotPeriodic() method... Override me!
+Unhandled exception: java.lang.NoSuchMethodError: 'org.ejml.simple.SimpleBase org.ejml.simple.SimpleMatrix.mult(org.ejml.simple.SimpleBase)'
+Error at frc.robot.Subsystems.Drivetrain.drive(Drivetrain.java:70): Unhandled exception: java.lang.NoSuchMethodError: 'org.ejml.simple.SimpleBase org.ejml.simple.SimpleMatrix.mult(org.ejml.simple.SimpleBase)'
+at edu.wpi.first.math.kinematics.SwerveDriveKinematics.toSwerveModuleStates(SwerveDriveKinematics.java:135)
+at edu.wpi.first.math.kinematics.SwerveDriveKinematics.toSwerveModuleStates(SwerveDriveKinematics.java:159)
+at frc.robot.Subsystems.Drivetrain.drive(Drivetrain.java:70)
+at frc.robot.Robot.driveWithJoystick(Robot.java:56)
+at frc.robot.Robot.teleopPeriodic(Robot.java:30)
+at edu.wpi.first.wpilibj.IterativeRobotBase.loopFunc(IterativeRobotBase.java:348)
+at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:130)
+at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:358)
+at edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:451)
+at frc.robot.Main.main(Main.java:23) */
